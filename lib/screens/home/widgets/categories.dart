@@ -36,17 +36,6 @@ class _CategoriesState extends State<Categories> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            // Text(
-            //   categories[index],
-            //   style: TextStyle(
-            //     fontWeight: FontWeight.bold,
-            //     fontSize: 30,
-            //     color: selectedIndex == index
-            //         ? Colors.red[400]
-            //         : Colors.black.withOpacity(.3),
-            //   ),
-            // ),
-
             TweenAnimationBuilder(
               child: Text(
                 categories[index],
@@ -67,7 +56,6 @@ class _CategoriesState extends State<Categories> {
                 );
               },
             ),
-
             AnimatedContainer(
               duration: Duration(milliseconds: 300),
               margin: EdgeInsets.only(top: 10 / 4),

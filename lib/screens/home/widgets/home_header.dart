@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class HomeHeader extends StatelessWidget {
+  final GlobalKey<ScaffoldState> drawerKey;
+
+  const HomeHeader({Key key, @required this.drawerKey}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -42,7 +46,9 @@ class HomeHeader extends StatelessWidget {
                         'assets/icons/menu.svg',
                         color: Colors.grey[900],
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        drawerKey.currentState.openDrawer();
+                      },
                     ),
                   ),
                 ],

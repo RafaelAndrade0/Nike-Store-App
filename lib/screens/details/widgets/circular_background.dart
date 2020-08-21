@@ -37,14 +37,10 @@ class CircularBackgroundPainter extends CustomPainter {
     middlePath.addArc(
         Rect.fromLTRB(-135, 0, size.width + 50, size.height / 2.2), 0.1, 30);
     Path lowerPath = new Path();
-    //path1.lineTo(size.width, 0);
-    //path1.lineTo(size.width, size.height / 3);
-    //path1.addOval(Rect.fromLTRB(-150, 100, size.width + 50, size.height / 2));
     lowerPath.addRect(Rect.fromLTRB(0, 0, size.width, size.height / 5));
     lowerPath.addArc(
         Rect.fromLTRB(-150, -100, size.width + 50, size.height / 2.5), 0.1, 30);
-    //path1.quadraticBezierTo(0, size.height / 3, size.width, size.height / 3);
-    canvas.drawPath(upperPath, lowerPaint);
+    // canvas.drawPath(upperPath, lowerPaint);
     canvas.drawPath(middlePath, middlePaint);
     canvas.drawPath(lowerPath, mainPaint);
   }

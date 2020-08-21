@@ -95,7 +95,7 @@ List<Shoe> shoesList = [
     id: '4',
     title: "Low 'Titan'",
     price: 325,
-    thumbImage: 'assets/images/lowtitan.png',
+    thumbImage: 'assets/images/lebron17_red.png',
   ),
   Shoe(
     id: '5',

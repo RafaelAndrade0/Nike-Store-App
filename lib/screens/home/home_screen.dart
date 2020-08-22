@@ -5,7 +5,7 @@ import 'package:nike_store_app/screens/home/widgets/home_body.dart';
 import 'package:nike_store_app/screens/home/widgets/home_header.dart';
 
 class HomeScreen extends StatelessWidget {
-  GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
+  final GlobalKey<ScaffoldState> _drawerKey = GlobalKey();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +49,7 @@ class HomeScreen extends StatelessWidget {
                     height: 15,
                   ),
                   Text(
-                    'Bem Vindo,',
+                    'Welcome,',
                     style: GoogleFonts.raleway(
                       fontSize: 25,
                     ),
@@ -85,7 +85,7 @@ class HomeScreen extends StatelessWidget {
                           width: 20,
                         ),
                         Text(
-                          'Catalogo',
+                          'Catalog',
                           style: GoogleFonts.raleway(
                             fontSize: 18,
                           ),
@@ -110,7 +110,7 @@ class HomeScreen extends StatelessWidget {
                           width: 20,
                         ),
                         Text(
-                          'Seu Carrinho',
+                          'Your Cart',
                           style: GoogleFonts.raleway(
                             fontSize: 18,
                           ),
@@ -135,7 +135,7 @@ class HomeScreen extends StatelessWidget {
                           width: 20,
                         ),
                         Text(
-                          'Seus pedidos',
+                          'Your Orders',
                           style: GoogleFonts.raleway(
                             fontSize: 18,
                           ),
@@ -160,7 +160,7 @@ class HomeScreen extends StatelessWidget {
                           width: 20,
                         ),
                         Text(
-                          'Favoritos',
+                          'Favorites',
                           style: GoogleFonts.raleway(
                             fontSize: 18,
                           ),
@@ -185,7 +185,7 @@ class HomeScreen extends StatelessWidget {
                           width: 20,
                         ),
                         Text(
-                          'Sair',
+                          'Logout',
                           style: GoogleFonts.raleway(
                             fontSize: 18,
                           ),

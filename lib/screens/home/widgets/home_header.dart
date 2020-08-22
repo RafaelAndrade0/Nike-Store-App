@@ -23,15 +23,6 @@ class HomeHeader extends StatelessWidget {
                 children: <Widget>[
                   IconButton(
                     icon: SvgPicture.asset(
-                      'assets/icons/cart2.svg',
-                      height: 25,
-                      color: Colors.grey[900],
-                      fit: BoxFit.fitHeight,
-                    ),
-                    onPressed: () {},
-                  ),
-                  IconButton(
-                    icon: SvgPicture.asset(
                       'assets/icons/search.svg',
                       height: 20,
                       color: Colors.grey[900],

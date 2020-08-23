@@ -6,12 +6,22 @@ class HomeBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-        child: GridView.count(
-      childAspectRatio: 3 / 4,
-      crossAxisCount: 2,
-      children: [
-        for (var shoe in shoesList) ShoeItem(shoe: shoe),
-      ],
+        child: TweenAnimationBuilder(
+      duration: Duration(milliseconds: 2000),
+      tween: Tween<double>(begin: 0, end: 1),
+      builder: (BuildContext context, double val, Widget child) {
+        return Opacity(
+          opacity: val,
+          child: child,
+        );
+      },
+      child: GridView.count(
+        childAspectRatio: 3 / 4,
+        crossAxisCount: 2,
+        children: [
+          for (var shoe in shoesList) ShoeItem(shoe: shoe),
+        ],
+      ),
     ));
   }
 }

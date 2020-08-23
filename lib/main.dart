@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nike_store_app/screens/home/home_screen.dart';
+import 'package:nike_store_app/screens/splash/splash_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }

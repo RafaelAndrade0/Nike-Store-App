@@ -67,22 +67,6 @@ class ShoeItem extends StatelessWidget {
                         ),
                       ),
                     ),
-                    // child: Transform.rotate(
-                    //   angle: -pi / 7,
-                    //   child: Hero(
-                    //     tag: shoe.id,
-                    //     child: Container(
-                    //       decoration: BoxDecoration(
-                    //         image: DecorationImage(
-                    //           fit: BoxFit.cover,
-                    //           image: AssetImage(
-                    //             shoe.thumbImage ?? 'assets/images/air.png',
-                    //           ),
-                    //         ),
-                    //       ),
-                    //     ),
-                    //   ),
-                    // ),
                   ),
                   Text(
                     shoe.title ?? 'Air Jordans',

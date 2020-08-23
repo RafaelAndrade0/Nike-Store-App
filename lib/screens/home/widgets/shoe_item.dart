@@ -70,7 +70,6 @@ class ShoeItem extends StatelessWidget {
                   ),
                   Text(
                     shoe.title ?? 'Air Jordans',
-                    // textAlign: TextAlign.center,
                     overflow: TextOverflow.ellipsis,
                     maxLines: 2,
                     style: GoogleFonts.raleway(

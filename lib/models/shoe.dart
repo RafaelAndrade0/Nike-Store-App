@@ -81,7 +81,7 @@ List<Shoe> shoesList = [
   ),
   Shoe(
     id: '2',
-    title: 'University Red',
+    title: 'Univ. Red',
     price: 450,
     thumbImage: 'assets/images/un-red.png',
   ),
